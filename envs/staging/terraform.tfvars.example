@@ -1,0 +1,32 @@
+# Configurações do Projeto
+project_id = "meu-projeto-gcp-staging"
+region     = "us-central1"
+zone       = "us-central1-a"
+environment = "staging"
+
+# Senha do banco de dados (NUNCA commite este arquivo com senhas reais!)
+sql_password = "SUA_SENHA_SUPER_SEGURA_AQUI"
+
+# Caminho para chave SSH pública
+ssh_public_key_path = "~/.ssh/id_rsa.pub"
+
+# Domínio para SSL (opcional - recomendado para staging)
+domain_name = "staging.meudominio.com"
+
+# Configurações para criação de projeto (opcional)
+create_project = false
+project_name = "Meu Projeto Staging"
+billing_account_id = "012345-6789AB-CDEF01"
+org_id = "123456789012"
+
+# Se create_project = true, configure:
+# - project_name: Nome do projeto
+# - billing_account_id: ID da conta de billing
+# - org_id: ID da organização (opcional)
+
+# Configurações específicas do ambiente staging:
+# - Recursos intermediários entre dev e prod
+# - Instâncias estáveis (não preemptíveis)
+# - Backup habilitado
+# - HTTPS opcional (recomendado)
+# - Lifecycle policies moderadas

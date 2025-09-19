@@ -51,7 +51,7 @@ terraform-gcp-infra/
 1. Clone o repositório:
 ```bash
 git clone <repository-url>
-cd terraform-gcp-infra
+cd terraform-template-gcp
 ```
 
 2. Configure as variáveis:
